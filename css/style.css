@@ -1,0 +1,265 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body{
+    background-color:#181a1b;
+}
+
+.nav{
+    width: 100%;
+    height: 70px;
+    background-color: #262a2b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navLogo{
+    width: 65px;
+    margin-left: 30px;
+}
+
+#navName, #navName:hover{
+    color: white;
+    display: inline-block;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 5px;
+    font-family:'Acme', sans-serif;
+    cursor: default;
+}
+
+#navList{
+    list-style-type: none;
+    float: right;
+    padding-right: 30px;
+}
+
+.navListItems{
+    display: inline;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    color: white;
+    line-height: 70px;
+    padding-right: 8px;
+    transition: 500ms;
+}
+
+.navListItems:hover{
+    font-size: 26px;
+    transition: 500ms;
+}
+
+#homeListItem{
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 3px 0px 3px;
+    padding-left: 6px;
+}
+
+#contactListItem{
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 3px 0px 0px;
+    padding-left: 6px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    height: 300px;
+    border-style: solid;
+    border-color: white;
+    
+}
+
+#headerTitle, #headerTitle:hover{
+    text-align: center;
+    padding-top: 120px;
+    font-size: 65px;
+    font-family: 'Roboto Condensed', sans-serif;
+    cursor: default;
+
+}
+
+#productTitle, #productTitle{
+    margin: 15px;
+    font-size: 25px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 0px 0px 5px;
+    padding: 5px;
+    cursor: default;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.productsList{
+    text-align: center;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#productItem{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#productPhoto{
+    border-style: solid;
+    border-width: 3px;
+    width: 300px;
+    transition: 500ms;
+}
+
+#productPhoto:hover{
+    border-radius: 40px;
+    transition: 500ms;
+}
+
+#productName{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#productPrice{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+}
+
+.footer{
+    width: 100%;
+    height: 80px;
+    background-color: #262a2b;
+}
+
+#footerTitle{
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 19px;
+    width: 100%;
+    transform:translateY(30px)
+}
+
+footer span{
+    color: rgb(179, 0, 179);
+    font-weight: bold;
+}
+
+.footerList{
+    list-style-type: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-top: 10px; 
+}
+
+#footerInstagramItem{
+    border-style: solid;
+    border-width: 0px 0px 3px 0px;
+    display: inline-block;
+}
+
+#footerWhatsappItem{
+    border-style: solid;
+    border-width: 0px 0px 3px 0px;
+    float: right;
+}
+
+#whatsappFooterIcon{
+    width: 35px;
+}
+
+#instagramFooterIcon{
+    width: 35px;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 1000px){
+    
+    #headerTitle, #headerTitle:hover{
+        text-align: center;
+        font-size: 65px;
+        font-family: 'Roboto Condensed', sans-serif;
+        cursor: default;
+    
+    }
+
+    .productsList{
+        text-align: center;
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer{
+        width: 100%;
+        height: 120px;
+        background-color: #262a2b;
+    }
+
+    .footerList{
+        list-style-type: none;
+        font-family: 'Roboto Condensed', sans-serif;
+        padding-top: 30px; 
+    }
+
+}
+
+@media screen and (max-width: 650px){
+    
+    #headerTitle, #headerTitle:hover{
+        text-align: center;
+        font-size: 65px;
+        font-family: 'Roboto Condensed', sans-serif;
+        cursor: default;
+    
+    }
+
+    .productsList{
+        text-align: center;
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footerList{
+        list-style-type: none;
+        font-family: 'Roboto Condensed', sans-serif;
+        padding-top: 10px; 
+    }
+
+}
+
+@media screen and (max-width: 505px){
+    
+    #headerTitle, #headerTitle:hover{
+        text-align: center;
+        font-size: 65px;
+        padding-top: 70px;
+        font-family: 'Roboto Condensed', sans-serif;
+        cursor: default;
+    
+    }
+
+    .productsList{
+        text-align: center;
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footerList{
+        list-style-type: none;
+        font-family: 'Roboto Condensed', sans-serif;
+        padding-top: 10px; 
+    }
+
+}
